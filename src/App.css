@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5dc; /* Light background color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Container for the Profile */
+.container {
+  max-width: 1000px; /* Maximum width for the container */
+  margin: auto; /* Center the container */
+  padding: 20px; /* Padding inside the container */
+  background-color: lavender; /* White background for the container */
+  border-radius: 8px; /* Rounded corners */
+  border-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header Styles */
+header {
+  margin-bottom: 20px; /* Space below the header */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Button Container Styles */
+.button-container {
+  margin-bottom: 20px; /* Space below the buttons */
 }
 
-.App-link {
-  color: #61dafb;
+/* Button Styles */
+.btn {
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 16px; /* Font size */
+  background-color: #007BFF; /* Blue button color */
+  color: rgb(34, 2, 34); /* White text color */
+  transition: background-color 0.3s; /* Smooth transition */
+  margin-right: 10px; /* Space between buttons */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Button Hover Effect */
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
+
+/* Section Styles */
+.about-section,
+.contact-section,
+.projects-section,
+.certifications-section {
+  display: block; /* Default to block when visible */
+  margin-top: 20px; /* Space above sections */
+  border: 1px solid black; /* Light gray border */
+  padding: 20px; /* Padding inside sections */
+  border-radius: 5px; /* Rounded corners */
+  background-color: lightcyan; /* White background color */
+}
+/* Ensure the image is aligned to the left */
+/* Add these styles for the container and image positioning */
+/* Add these styles for the container and image positioning */
+.container {
+  position: relative; /* To ensure absolute positioning of image inside the container */
+}
+
+/* Style for the image */
+img {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Aligns the image to the top-right corner */
+  width: 150px; /* Adjust image size as needed */
+  height: auto;
+  border-radius: 10px; /* Optional: rounded corners for the image */
+  bottom: 30px; /* Adjust to add space between image and the bottom of the container */
+}
+
+
